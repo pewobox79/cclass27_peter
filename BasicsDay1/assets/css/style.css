@@ -1,0 +1,65 @@
+ header{
+          background-color: lightgray;
+          border-radius: 10px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          border: 2px solid green  
+        }
+
+#topHeader{
+            border: 1px solid blue;
+            text-align: center;
+        }
+#logo{
+            border: 2px solid black
+        }
+
+#mainNavigation > ul{
+            padding: 0
+        }
+
+.navLink{
+            list-style-type: none;
+            border: 1px solid black;
+            color: black;
+            font-weight: bold;
+            width: 90px;
+            background-color: green;
+            border-radius: 5px;
+            text-align: center;
+
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+
+            margin: 10px 10px ;
+
+            padding: 30px;
+        }
+
+        
+        /* pseudo class */
+.navLink:hover{
+    background-color: white;
+    color: green
+}
+
+/* Media Queries to create Breakpoints for mobile behaviour*/
+
+/* breakpoint at 768px */
+@media screen and (min-width: 768px) {
+
+.navLink{
+    font-weight: lighter
+}
+
+
+
+
+
+    
+}
+
+
+
+        
