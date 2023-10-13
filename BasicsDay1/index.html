@@ -2,33 +2,39 @@
 <html>
 
 <head><!-- meta information - not visible on the website -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>BasicsDay1 - by CCClass27</title><!-- part of the browser -->
-
+    
+    <!--connect style.css file to index.html-->
+    
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 
 <body><!-- keeps all content -->
     <!-- browser default font size value === 16px -->
-
-
-    <header><!-- not mix it with the <head> totaly different -->
+    <header>
+        <!-- not mix it with the <head> totaly different -->
         <div id="headerInner">
             <div id="topHeader">
                 <a href="https://google.com">
-                    <img src="./assets/img/startstepLogo.png" alt="Logo of StartSteps" width="70">
+                    <img id="logo" src="./assets/img/startstepLogo.png" alt="Logo of StartSteps" width="70">
                 </a>
             </div>
             <div id="lowerHeader">
-                <nav>
+                <nav id="mainNavigation">
                     <ul>
-                        <a href="./index.html" target="_self" title="Home page" >
-                            <li>Home</li>
+                        <a href="./index.html" target="_self" title="Home page">
+                            <li class="navLink">Home</li>
                         </a>
                         <a href="./aboutme.html" target="_self" title="About me page">
-                            <li>About Me</li>
+                            <li class="navLinkGreen navLink">About Me</li>
                         </a>
                         <a href="https://google.com" target="_blank" title="Link to google">
-                            <li>Google</li>
+                            <li class="navLink">Google</li>
                         </a>
                     </ul>
                 </nav>
@@ -73,7 +79,7 @@
 
 
         <section id="recommendation">
-            <p>This is perfect coding</p>
+            <p class="navLink">This is perfect coding</p>
 
             <blockquote>
                 <p>This is perfect coding!</p>
@@ -92,9 +98,5 @@
     </main>
     <footer>
         <!-- holds legal links, social links or has a special footer navigation (different navigation as header navigation) -->
-
-
     </footer>
-
-
 </body>
