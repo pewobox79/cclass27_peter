@@ -34,6 +34,15 @@ body{
     align-items: center;
 
 }
+#anchorForList{
+    min-height: 150px;
+    width: 100%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #itemInput{
     width: 80%;
