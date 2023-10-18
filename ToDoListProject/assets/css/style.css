@@ -1,0 +1,113 @@
+body{
+    background-color: lightgray;
+}
+
+.headerElement{
+    text-align: center;
+}
+
+#logo{
+    width: 20%
+}
+
+#footerInner{
+    text-align: center;
+}
+
+
+#mainInner{
+     min-height: 50vh;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.mainElement{
+    border: 1px solid black;
+    min-height: 150px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#itemInput{
+    width: 80%;
+    padding: 10px
+}
+
+
+.toDoItem{
+    display: flex;
+    border: 1px solid lightgray;
+    width: 80%;
+    border-radius: 10px;
+    margin: 5px 0
+
+}
+
+
+.toDoElement:first-child{
+ width: 70%;
+ padding-left: 5px;
+ word-wrap:break-word;
+
+}
+
+.toDoElement:last-child{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.itemButton{
+    min-width: 30px;
+    outline: 1px solid black;
+    text-align: center;
+}
+
+.itemButton:hover{
+    cursor: pointer;
+}
+
+.buttonGreen{
+    background-color: green;
+}
+
+.buttonRed{
+    background-color: red;
+}
+
+
+
+/*breakpiont mobile to desktop*/
+@media screen and (min-width: 768px) {
+    
+/*source flexbox : https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+
+    #headerInner{
+        display: flex;
+        flex-direction: row;/*default value*/
+        justify-content: space-between;
+    }
+
+    .headerElement{
+        width: 30%;
+    }
+
+    #mainInner{
+        flex-wrap: nowrap;
+    }
+
+    #itemInput{
+        width: 400px;
+    }
+    .toDoItem{
+        max-width: 400px
+    }
+}
